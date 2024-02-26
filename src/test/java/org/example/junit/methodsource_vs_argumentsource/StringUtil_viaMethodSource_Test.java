@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.junit.methodsource_vs_argumentsource;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -27,8 +27,8 @@ class StringUtil_viaMethodSource_Test {
         // The error remains even if we explicitly specify the method name:
         // @MethodSource("extractLastTrimmedArgs")
         // With current JUnit versions it works with a fully qualified name though:
-        @MethodSource(value = "org.example.test.StringUtil_viaMethodSource_Test#extractLastTrimmedArgs")
-            // BUT: this is ugly and probably not very refactoring safe (class / method renaming...)
+        @MethodSource(value = "org.example.junit.methodsource_vs_argumentsource.StringUtil_viaMethodSource_Test#extractLastTrimmedArgs")
+            // BUT: this is ugly and probably not very refactoring safe (package / class / method renaming...)
             // for a better solution see StringUtilTest_viaArgumentsSource
         void extractLastTrimmed(final String str, final String expectedStr) {
             final String result = StringUtil.extractLastTrimmed(str);

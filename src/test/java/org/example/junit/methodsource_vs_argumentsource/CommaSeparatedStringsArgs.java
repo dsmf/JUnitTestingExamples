@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.junit.methodsource_vs_argumentsource;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.provider.Arguments;

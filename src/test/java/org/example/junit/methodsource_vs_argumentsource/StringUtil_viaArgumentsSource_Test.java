@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.junit.methodsource_vs_argumentsource;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.extension.ExtensionContext;

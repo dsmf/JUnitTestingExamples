@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.junit.methodsource_vs_argumentsource;
 
 public class StringUtil {
 
